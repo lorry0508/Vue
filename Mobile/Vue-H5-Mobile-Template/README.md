@@ -1,10 +1,29 @@
-项目使用技术介绍：
-    1.Vue
-    2.Vant-UI
-    3.Sass
-    4.Vuex
-    5.Vue-router
-    6.Axios
-    7.Webpack
-    8.CDN
-    9.Eslint + Prettier
+# demo
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Run your tests
+```
+yarn run test
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
