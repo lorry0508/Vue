@@ -18,7 +18,7 @@ var constantRouterMap = [{
   path: '/',
   component: function component() {
     return Promise.resolve().then(function () {
-      return _interopRequireWildcard(require('@/views/layouts/index'));
+      return _interopRequireWildcard(require('../views/layouts/index.vue'));
     });
   },
   redirect: '/home',
@@ -31,7 +31,7 @@ var constantRouterMap = [{
     name: 'Home',
     component: function component() {
       return Promise.resolve().then(function () {
-        return _interopRequireWildcard(require('@/views/home/index'));
+        return _interopRequireWildcard(require('../views/home/index.vue'));
       });
     },
     meta: {
@@ -43,7 +43,7 @@ var constantRouterMap = [{
     name: 'About',
     component: function component() {
       return Promise.resolve().then(function () {
-        return _interopRequireWildcard(require('@/views/home/about'));
+        return _interopRequireWildcard(require('../views/home/about.vue'));
       });
     },
     meta: {
