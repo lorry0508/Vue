@@ -4,7 +4,7 @@
 export const routerMap = [{
     path: '/',
     component: () =>
-        import ('../views/layouts/index'),
+        import ('@/views/layouts/index'),
     redirect: '/home',
     meta: {
         title: '首页',
@@ -14,14 +14,14 @@ export const routerMap = [{
             path: '/home',
             name: 'Home',
             component: () =>
-                import ('../views/home/index'),
+                import ('@/views/home/index'),
             meta: { title: '首页', keepAlive: false }
         },
         {
             path: '/about',
             name: 'About',
             component: () =>
-                import ('../views/home/about'),
+                import ('@/views/home/about'),
             meta: { title: '关于', keepAlive: false }
         }
     ]

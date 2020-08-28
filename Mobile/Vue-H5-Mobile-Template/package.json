@@ -1,44 +1,51 @@
 {
-  "name": "vue-h5-mobile-template",
-  "author": "lorry0508",
-  "description": "https://github.com/lorry0508/Vue/tree/master/Mobile/vue-h5-mobile-template",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.0",
-    "@vue/cli-plugin-eslint": "^4.5.0",
-    "@vue/cli-service": "^4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "vue-h5-mobile-template",
+    "author": "lorry0508",
+    "description": "https://github.com/lorry0508/Vue/tree/master/Mobile/Vue-H5-Mobile-Template",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "dependencies": {
+        "core-js": "3.6.4",
+        "vant": "^2.10.3",
+        "vue": "^2.6.11",
+        "vue-router": "^3.4.3",
+        "vuex": "^3.5.1"
     },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.5.0",
+        "@vue/cli-plugin-eslint": "^4.5.0",
+        "@vue/cli-service": "^4.5.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.7.0",
+        "eslint-plugin-vue": "^6.2.2",
+        "node-sass": "^4.13.1",
+        "sass-loader": "^8.0.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {
+            "no-tabs": "off"
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
 }
