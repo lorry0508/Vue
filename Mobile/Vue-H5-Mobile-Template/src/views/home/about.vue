@@ -14,12 +14,12 @@
                 <div class="item">项目作者: lorry0508</div>
                 <div class="item"></div>
                 <div class="wechat">
-                    <img src="@/assets/img/kaola.jpg" alt="">
+                    <img :src="imgUrl" alt="">
                 </div>
                 <div class="item">基于vue的vant移动端模板</div>
                 <div class="item">
                     {{ userName }}
-                    <van-button v-if="userName == ''" round type="info" size="small" @click="goGithub">点击~</van-button>
+                    <van-button v-if="userName == ''" round type="info" size="small" @click="doDispatch">点击~</van-button>
                 </div>
             </div>
         </div>
@@ -27,12 +27,15 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
     data() {
         return {
-            wechat: "@/assets/img/kaola.jpg",
-            userName: ''
+            imgUrl: '@/assets/img/kaola.jpg'
         };
+    },
+    computed: {
+        ...mapGetters(['userName'])
     },
     mounted() {
         this.initData();
@@ -43,7 +46,7 @@ export default {
         
         },
         doDispatch() {
-
+            this.$store.dispatch('setUserName', '就这样')
         },
         goGithub(index) {
             window.location.href = "https://github.com/lorry0508/Vue/tree/master/Mobile/Vue-H5-Mobile-Template";
@@ -51,7 +54,7 @@ export default {
     },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .about-container {
     background: #fff;
     height: 100vh;
@@ -81,7 +84,7 @@ export default {
                 }
                 .van-button {
                     /* vant-ui 元素*/
-                    background: #ff5500;
+                    background: skyblue;
                 }
             }
 
